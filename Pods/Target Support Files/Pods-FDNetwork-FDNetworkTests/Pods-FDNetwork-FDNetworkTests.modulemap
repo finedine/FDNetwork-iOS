@@ -1,0 +1,6 @@
+framework module Pods_FDNetwork_FDNetworkTests {
+  umbrella header "Pods-FDNetwork-FDNetworkTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

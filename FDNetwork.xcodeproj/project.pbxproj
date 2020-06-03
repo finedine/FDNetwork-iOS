@@ -3,13 +3,16 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3BB253965F6EB5845FC48AFC /* Pods_FDNetwork_FDNetworkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58A64A77A24E7C48F6EA87AD /* Pods_FDNetwork_FDNetworkTests.framework */; };
+		4DFD8FE17D113A8CB110EF58 /* Pods_FDNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 740AAA3ECDAC54266099A8D3 /* Pods_FDNetwork.framework */; };
 		68461CFD24360FB4004F8565 /* FDNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68461CF324360FB3004F8565 /* FDNetwork.framework */; };
 		68461D0224360FB4004F8565 /* FDNetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68461D0124360FB4004F8565 /* FDNetworkTests.swift */; };
-		68461D0424360FB4004F8565 /* FDNetwork.h in Headers */ = {isa = PBXBuildFile; fileRef = 68461CF624360FB3004F8565 /* FDNetwork.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		68461D0E2436105D004F8565 /* FDNetworkRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68461D0D2436105D004F8565 /* FDNetworkRouter.swift */; };
+		68461D1024361176004F8565 /* FDNetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68461D0F24361176004F8565 /* FDNetworkClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,12 +26,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1351C37E54D39B4C73CC6D50 /* Pods-FDNetwork-FDNetworkTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FDNetwork-FDNetworkTests.debug.xcconfig"; path = "Target Support Files/Pods-FDNetwork-FDNetworkTests/Pods-FDNetwork-FDNetworkTests.debug.xcconfig"; sourceTree = "<group>"; };
+		25BC8295E91A60EC04416101 /* Pods-FDNetwork-FDNetworkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FDNetwork-FDNetworkTests.release.xcconfig"; path = "Target Support Files/Pods-FDNetwork-FDNetworkTests/Pods-FDNetwork-FDNetworkTests.release.xcconfig"; sourceTree = "<group>"; };
+		4D7BA5DA91398B42B44710FC /* Pods-FDNetwork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FDNetwork.debug.xcconfig"; path = "Target Support Files/Pods-FDNetwork/Pods-FDNetwork.debug.xcconfig"; sourceTree = "<group>"; };
+		58A64A77A24E7C48F6EA87AD /* Pods_FDNetwork_FDNetworkTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FDNetwork_FDNetworkTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		68461CF324360FB3004F8565 /* FDNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FDNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		68461CF624360FB3004F8565 /* FDNetwork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDNetwork.h; sourceTree = "<group>"; };
 		68461CF724360FB3004F8565 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		68461CFC24360FB4004F8565 /* FDNetworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FDNetworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		68461D0124360FB4004F8565 /* FDNetworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FDNetworkTests.swift; sourceTree = "<group>"; };
 		68461D0324360FB4004F8565 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68461D0D2436105D004F8565 /* FDNetworkRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FDNetworkRouter.swift; sourceTree = "<group>"; };
+		68461D0F24361176004F8565 /* FDNetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FDNetworkClient.swift; sourceTree = "<group>"; };
+		70C9C166CAB23607A878C769 /* Pods-FDNetwork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FDNetwork.release.xcconfig"; path = "Target Support Files/Pods-FDNetwork/Pods-FDNetwork.release.xcconfig"; sourceTree = "<group>"; };
+		740AAA3ECDAC54266099A8D3 /* Pods_FDNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FDNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DFD8FE17D113A8CB110EF58 /* Pods_FDNetwork.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +55,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				68461CFD24360FB4004F8565 /* FDNetwork.framework in Frameworks */,
+				3BB253965F6EB5845FC48AFC /* Pods_FDNetwork_FDNetworkTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +68,8 @@
 				68461CF524360FB3004F8565 /* FDNetwork */,
 				68461D0024360FB4004F8565 /* FDNetworkTests */,
 				68461CF424360FB3004F8565 /* Products */,
+				FA9BB281EACFE97AF3B2E52E /* Pods */,
+				83A4244CE24CE5FFDE87B425 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,8 +85,9 @@
 		68461CF524360FB3004F8565 /* FDNetwork */ = {
 			isa = PBXGroup;
 			children = (
-				68461CF624360FB3004F8565 /* FDNetwork.h */,
 				68461CF724360FB3004F8565 /* Info.plist */,
+				68461D0D2436105D004F8565 /* FDNetworkRouter.swift */,
+				68461D0F24361176004F8565 /* FDNetworkClient.swift */,
 			);
 			path = FDNetwork;
 			sourceTree = "<group>";
@@ -86,6 +101,26 @@
 			path = FDNetworkTests;
 			sourceTree = "<group>";
 		};
+		83A4244CE24CE5FFDE87B425 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				740AAA3ECDAC54266099A8D3 /* Pods_FDNetwork.framework */,
+				58A64A77A24E7C48F6EA87AD /* Pods_FDNetwork_FDNetworkTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA9BB281EACFE97AF3B2E52E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4D7BA5DA91398B42B44710FC /* Pods-FDNetwork.debug.xcconfig */,
+				70C9C166CAB23607A878C769 /* Pods-FDNetwork.release.xcconfig */,
+				1351C37E54D39B4C73CC6D50 /* Pods-FDNetwork-FDNetworkTests.debug.xcconfig */,
+				25BC8295E91A60EC04416101 /* Pods-FDNetwork-FDNetworkTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -93,7 +128,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68461D0424360FB4004F8565 /* FDNetwork.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,6 +138,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 68461D0724360FB4004F8565 /* Build configuration list for PBXNativeTarget "FDNetwork" */;
 			buildPhases = (
+				47CB8D636A8E7F3E53CB8AE3 /* [CP] Check Pods Manifest.lock */,
 				68461CEE24360FB3004F8565 /* Headers */,
 				68461CEF24360FB3004F8565 /* Sources */,
 				68461CF024360FB3004F8565 /* Frameworks */,
@@ -122,9 +157,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 68461D0A24360FB4004F8565 /* Build configuration list for PBXNativeTarget "FDNetworkTests" */;
 			buildPhases = (
+				C2A4E9BD8296A2C02B429155 /* [CP] Check Pods Manifest.lock */,
 				68461CF824360FB4004F8565 /* Sources */,
 				68461CF924360FB4004F8565 /* Frameworks */,
 				68461CFA24360FB4004F8565 /* Resources */,
+				D1CF9CD1B830DC6277115767 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -148,6 +185,7 @@
 				TargetAttributes = {
 					68461CF224360FB3004F8565 = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 					};
 					68461CFB24360FB4004F8565 = {
 						CreatedOnToolsVersion = 11.3.1;
@@ -190,11 +228,77 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		47CB8D636A8E7F3E53CB8AE3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FDNetwork-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C2A4E9BD8296A2C02B429155 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FDNetwork-FDNetworkTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D1CF9CD1B830DC6277115767 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FDNetwork-FDNetworkTests/Pods-FDNetwork-FDNetworkTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FDNetwork-FDNetworkTests/Pods-FDNetwork-FDNetworkTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FDNetwork-FDNetworkTests/Pods-FDNetwork-FDNetworkTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		68461CEF24360FB3004F8565 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68461D0E2436105D004F8565 /* FDNetworkRouter.swift in Sources */,
+				68461D1024361176004F8565 /* FDNetworkClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,7 +443,9 @@
 		};
 		68461D0824360FB4004F8565 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D7BA5DA91398B42B44710FC /* Pods-FDNetwork.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = WCK5SZTZ8H;
@@ -348,14 +454,18 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = FDNetwork/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = FineDine.FDNetwork;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -363,7 +473,9 @@
 		};
 		68461D0924360FB4004F8565 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70C9C166CAB23607A878C769 /* Pods-FDNetwork.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = WCK5SZTZ8H;
@@ -372,14 +484,17 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = FDNetwork/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = FineDine.FDNetwork;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -387,7 +502,9 @@
 		};
 		68461D0B24360FB4004F8565 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1351C37E54D39B4C73CC6D50 /* Pods-FDNetwork-FDNetworkTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WCK5SZTZ8H;
 				INFOPLIST_FILE = FDNetworkTests/Info.plist;
@@ -405,7 +522,9 @@
 		};
 		68461D0C24360FB4004F8565 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25BC8295E91A60EC04416101 /* Pods-FDNetwork-FDNetworkTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WCK5SZTZ8H;
 				INFOPLIST_FILE = FDNetworkTests/Info.plist;

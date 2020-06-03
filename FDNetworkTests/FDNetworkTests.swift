@@ -22,6 +22,17 @@ class FDNetworkTests: XCTestCase {
     func testExample() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+
+        let e = expectation(description: "Alamofire")
+        FDNetworkRouter.UDID = "xyz"
+        FDNetworkRouter.appVersion = "6.0"
+        FDNetworkRouter.URLType = .custom(base: "http://192.168.0.13:8080/v1", oldBase: "http://192.168.0.13:5000/")
+        FDNetworkClient.authenticateDevice(shopid: "SyWSL-Y5M", pincode: "9524", numberOfRetry: 3) { data, error in
+            print(data)
+            print(error)
+            e.fulfill()
+        }
+        waitForExpectations(timeout: 10.0, handler: nil)
     }
 
     func testPerformanceExample() {

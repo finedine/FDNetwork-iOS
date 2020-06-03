@@ -7,7 +7,20 @@
 		<key>FDNetwork.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>3</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>68461CF224360FB3004F8565</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>68461CFB24360FB4004F8565</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
